@@ -1,0 +1,19 @@
+@mixin bg-image($path: '', $size: cover, $repeat: no-repeat, $pos: center) {
+  background-image: url($path);
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $pos;
+}
+
+@mixin bg-gradient-image(
+  $grad: '',
+  $path: '',
+  $size: cover,
+  $repeat: no-repeat,
+  $pos: center
+) {
+  background: $grad, url($path);
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $pos;
+}

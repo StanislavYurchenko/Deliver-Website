@@ -2,5 +2,20 @@
  * Все паршалы импортировать в этот файл
  */
 
+@import 'fonts.scss';
+
 @import 'normalize.scss';
+
+@import './helpers/variables.scss';
+@import './helpers/mixin.scss';
+@import './helpers/placeholder.scss';
+
 @import 'base.scss';
+
+@import './components/header.scss';
+@import './components/about-us.scss';
+@import './components/servises.scss';
+@import './components/transport.scss';
+@import './components/tracking.scss';
+@import './components/brands.scss';
+@import './components/footer.scss';
