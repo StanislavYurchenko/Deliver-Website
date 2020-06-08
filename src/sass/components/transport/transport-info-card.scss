@@ -1,0 +1,39 @@
+.transport-info-card {
+  position: absolute;
+  left: 50%;
+  bottom: -173px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  width: 1170px;
+}
+// .transport-info-card__img {
+//   margin-bottom: 32px;
+// }
+.transport-info-card__list {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+}
+.transport-info-card__item {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 10px 18px 0px rgba(191, 191, 191, 0.4);
+  width: 370px;
+}
+.transport-info-card__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.transport-info-card__title {
+  @include font-settings(20px, 1.2, 700, $first-font-color);
+  margin-bottom: 22px;
+}
+.transport-info-card__description-item {
+  @include font-settings(16px, 1.2, 400, $fourth-font-color);
+  list-style: url('../images/transport/list_marker.png');
+  margin-bottom: 12px;
+}
+.transport-info-card-content-wrapper {
+  padding-top: 30px;
+  margin: 0 auto 30px;
+  width: 295px;
+}
