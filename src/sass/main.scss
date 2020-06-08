@@ -2,20 +2,26 @@
  * Все паршалы импортировать в этот файл
  */
 
-@import 'fonts.scss';
+@import 'fonts';
 
-@import 'normalize.scss';
+@import 'normalize';
 
-@import './helpers/variables.scss';
-@import './helpers/mixin.scss';
-@import './helpers/placeholder.scss';
+@import './helpers/variables';
+@import './helpers/mixin';
+@import './helpers/placeholder';
 
-@import 'base.scss';
+@import 'base';
 
-@import './components/header.scss';
-@import './components/about-us.scss';
-@import './components/servises.scss';
-@import './components/transport.scss';
-@import './components/tracking.scss';
-@import './components/brands.scss';
-@import './components/footer.scss';
+@import './components/header/header';
+
+@import './components/about-us/about-us';
+
+@import './components/servises/servises';
+
+@import './components/transport/transport';
+
+@import './components/tracking/tracking';
+
+@import './components/brands/brands';
+
+@import './components/footer/footer';
