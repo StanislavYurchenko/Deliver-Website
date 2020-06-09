@@ -15,3 +15,8 @@
   top: 150px;
   transform: translate(-50%, -50%);
 }
+@media (max-width: 1169px) {
+  .transport-video-bg {
+    width: 1170px;
+  }
+}
