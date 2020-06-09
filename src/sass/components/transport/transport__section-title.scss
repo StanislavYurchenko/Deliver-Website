@@ -1,0 +1,6 @@
+.transport__section-title {
+  @include font-settings(50px, 1.6, 700, $second-font-color);
+  text-shadow: $fourth-font-color 2px 0 10px;
+  text-align: center;
+  margin-bottom: 48px;
+}
