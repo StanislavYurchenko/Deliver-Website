@@ -1,0 +1,18 @@
+.footer-img--right {
+    grid-column: 3/ span 1;
+    display: grid;
+    grid-template-columns: 91.0113% 8.9887%;
+}
+
+.footer-img__item--foto-right {
+    grid-column: 1/ span 1;
+    background-image: url(../images/footer/footer-img-right.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+.footer-img__item--yellow {
+    grid-column: 2/ span 1;
+    background-color: $second-main-color;
+}

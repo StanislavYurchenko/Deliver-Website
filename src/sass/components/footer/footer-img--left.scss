@@ -1,0 +1,18 @@
+.footer-img--left {
+    grid-column: 1/ span 1;
+    display: grid;
+    grid-template-columns: 8.9887% 91.0113%;
+}
+
+.footer-img__item--red {
+    grid-column: 1/ span 1;
+    background-color: $first-main-color;
+}
+
+.footer-img__item--foto-left {
+    grid-column: 2/ span 1;
+    background-image: url(../images/footer/footer-img-left.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+}
