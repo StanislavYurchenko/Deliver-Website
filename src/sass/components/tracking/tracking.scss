@@ -1,7 +1,16 @@
+ul,
+li {
+  list-style: none;
+}
+
+* {
+  // outline: 1px solid blue;
+}
+
 .form {
   display: block;
   width: 571px;
-  height: 535px;
+  min-height: 535px;
   background-color: $first-main-color;
   font-size: 0;
   overflow: hidden;
@@ -71,6 +80,7 @@
   color: $third-font-color;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
   // background-image: url(../images/tracking/icon-down.png);
 
   @include bg-image(
@@ -97,7 +107,7 @@
   margin-bottom: 20px;
 }
 
-.form__item-content {
+.form__item-content-box {
   font-size: 0;
   line-height: 0;
   height: 0;
@@ -123,7 +133,7 @@
   transform: scale(110%);
 }
 
-.form__item-input:checked ~ .form__item-content {
+.form__item-input:checked ~ .form__item-content-box {
   color: $third-main-color;
   font-size: 14px;
   line-height: 1.15;
@@ -137,11 +147,22 @@
   margin-bottom: 20px;
 }
 
-* {
-  // outline: 1px solid blue;
+.form__item-content {
+  margin-bottom: 22px;
 }
 
-ul,
-li {
-  list-style: none;
+.form__item-items {
+  padding-left: 20px;
+}
+
+.form__item-item {
+  list-style: url('../images/tracking/list_marker.png');
+}
+
+.form__item-item:not(:last-child) {
+  padding-bottom: 10px;
+}
+.form__item-link {
+  text-decoration: none;
+  color: $third-main-color;
 }
