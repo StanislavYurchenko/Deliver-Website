@@ -1,0 +1,37 @@
+.brands__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.brands__link {
+  @extend %link;
+  width: 270px;
+  height: 130px;
+  background-color: $first-secondary-color;
+  border: 2px solid $border-color;
+  transition: all 0.3s linear;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &:hover {
+    border: 2px solid $first-main-color;
+  }
+}
+
+.brands__link--themeforest {
+  background-image: url("../images/brands/themeforest.png");
+}
+
+.brands__link--photodune {
+  background-image: url("../images/brands/photodune.png");
+}
+
+.brands__link--graphicriver {
+  background-image: url("../images/brands/graphicriver.png");
+}
+
+.brands__link--codecanyon {
+  background-image: url("../images/brands/codecanyon.png");
+}
