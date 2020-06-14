@@ -1,0 +1,94 @@
+.services {
+  padding-top: 144px;
+  padding-bottom: 100px;
+  width: 1180px;
+  margin: 0 auto;
+
+  &_title {
+    font-family: $first-font-family;
+    font-size: 50px;
+    color: $first-main-color;
+    padding-bottom: 114px;
+  }
+
+  &_menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  &_menu-item {
+    width: 270px;
+  }
+
+  &_item-title {
+    font-size: 20px;
+    line-height: 80px;
+    color: $first-main-color;
+    text-transform: uppercase;
+    font-family: $first-font-family;
+  }
+
+  &_item-text {
+    font-family: $first-font-family;
+    font-size: 16px;
+    line-height: 24px;
+    color: $fourth-font-color;
+    padding-bottom: 18px;
+  }
+
+  &_item-button {
+    background: none;
+    border: none;
+    font-family: $first-font-family;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 900;
+  }
+  &_menu-item-formbox {
+    width: 270px;
+    height: 340px;
+    background-color: $first-main-color;
+    padding: 0 30px;
+  }
+
+  &_item-formbox-title {
+    font-size: 20px;
+    line-height: 80px;
+    color: $third-main-color;
+  }
+
+  &_item-formbox-text {
+    border: 1px solid;
+    background-color: $second-main-color;
+    border-radius: 30px;
+    padding: 20px 48px;
+    text-transform: uppercase;
+    align-items: center;
+    color: $first-main-color;
+    font-weight: 900;
+  }
+
+  &_item-formbox-span {
+    font-size: 16px;
+    line-height: 26px;
+    color: $third-font-color;
+    padding-bottom: 40px;
+  }
+}
+.services_item-button::after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-image: url(../images/services/1486348525-music-forward-front-next-arrow_80457.png);
+}
+
+.services_item-formbox-title::after {
+  content: '';
+  display: block;
+  background-color: $second-main-color;
+  width: 72px;
+  height: 2px;
+  margin-bottom: 32px;
+}
