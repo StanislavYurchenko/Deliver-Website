@@ -1,7 +1,7 @@
 .transport-info-card {
   position: absolute;
   left: 50%;
-  bottom: -173px;
+  bottom: -172px;
   transform: translate(-50%, -50%);
   margin: 0 auto;
   width: 1170px;
@@ -25,7 +25,9 @@
   &__description-item {
     @include font-settings(16px, 1.2, 400, $fourth-font-color);
     list-style: url('../images/transport/list_marker.png');
-    margin-bottom: 12px;
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
   }
 }
 
