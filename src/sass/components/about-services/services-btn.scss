@@ -3,20 +3,29 @@
 }
 
 .services-btn__learn {
-  display: block;
-  margin: 0 auto;
-  font-size: 12px;
   font-family: $first-font-family;
+  font-size: 12px;
+  line-height: 30px;
   font-weight: 700;
-  text-transform: uppercase;
   color: $third-font-color;
-  text-align: center;
   text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  border: solid 2px white;
+  border-radius: 20px;
+  margin: 0 auto;
   cursor: pointer;
-  width: 150px;
-  height: 50px;
-  border-radius: 50px;
+  width: 196px;
+  height: 54px;
+  padding: 10px 36px;
+  margin-right: 20px;
   background-color: #a00000;
-  padding-top: 19px;
+  transition: background-color 0.2s linear, box-shadow 0.2s linear;
+}
 
+.services-btn__learn:hover {
+  color: $first-font-color;
+  background-color: $second-main-color;
+  box-shadow: 0px 10px 18px 0px rgba(255, 204, 0, 0.4);
+  border: none;
 }
