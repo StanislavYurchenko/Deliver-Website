@@ -1,6 +1,6 @@
 .services {
-  padding-top: 144px;
-  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 90px;
   width: 1180px;
   margin: 0 auto;
 
@@ -18,7 +18,16 @@
   }
 
   &_menu-item {
+    position: relative;
     width: 270px;
+    z-index: 1;
+  }
+
+  &_menu-item:hover {
+    .services_item-hover {
+      opacity: 1;
+      z-index: 1;
+    }
   }
 
   &_item-title {
@@ -40,16 +49,36 @@
   &_item-button {
     background: none;
     border: none;
+    width: 120px;
     font-family: $first-font-family;
     font-size: 16px;
     line-height: 24px;
     font-weight: 900;
+    position: relative;
+    text-align: left;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 6px;
+      right: 8px;
+      background-size: 10px 10px;
+      background-repeat: no-repeat;
+      background-image: url(../images/footer/icon-footer.svg);
+    }
   }
-  &_menu-item-formbox {
+
+  &_item-hover {
     width: 270px;
-    height: 340px;
+    height: 380px;
     background-color: $first-main-color;
     padding: 0 30px;
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
   }
 
   &_item-formbox-title {
@@ -59,36 +88,50 @@
   }
 
   &_item-formbox-text {
-    border: 1px solid;
-    background-color: $second-main-color;
-    border-radius: 30px;
-    padding: 20px 48px;
+    border: solid 2px rgb(255, 255, 255);
+    border-radius: 40px;
+    padding: 18px 48px;
     text-transform: uppercase;
     align-items: center;
-    color: $first-main-color;
+    color: $third-font-color;
     font-weight: 900;
-  }
+    cursor: pointer;
+    background-color: transparent;
 
+    &:hover {
+      color: $first-font-color;
+      background-color: $second-main-color;
+      border: solid 2px $second-main-color;
+      box-shadow: 0px 10px 18px 0px rgba(255, 204, 0, 0.4);
+    }
+  }
   &_item-formbox-span {
     font-size: 16px;
     line-height: 26px;
     color: $third-font-color;
-    padding-bottom: 40px;
+    margin-bottom: 44px;
+  }
+
+  &_form {
+    padding-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  &_item-formbox-title::after {
+    content: '';
+    display: block;
+    background-color: $second-main-color;
+    width: 72px;
+    height: 2px;
+    margin-bottom: 32px;
   }
 }
-.services_item-button::after {
-  content: '';
-  display: block;
-  width: 5px;
-  height: 5px;
-  background-image: url(../images/services/1486348525-music-forward-front-next-arrow_80457.png);
-}
 
-.services_item-formbox-title::after {
-  content: '';
-  display: block;
-  background-color: $second-main-color;
-  width: 72px;
-  height: 2px;
-  margin-bottom: 32px;
+select {
+  width: 210px;
+  padding: 20px 22px;
+  border: none;
+  background-color: #9d0000;
+  color: $third-font-color;
+  cursor: pointer;
 }
