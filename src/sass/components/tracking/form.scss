@@ -108,6 +108,7 @@
     border-right: 2px solid $third-main-color;
     border-bottom: 2px solid $third-main-color;
     color: $first-main-color;
+    background-color: $first-main-color-contrast;
   }
 
   &__item-input:checked ~ .form__item-label {
