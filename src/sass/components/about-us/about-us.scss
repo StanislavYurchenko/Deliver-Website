@@ -29,7 +29,14 @@
     @include font-settings(70px, 80px, 700, $third-font-color);
     text-transform: capitalize;
     text-align: left;
-    width: 470px;
+
+    &-br {
+      display: block;
+      font-family: $first-font-family;
+      @include font-settings(70px, 80px, 700, $third-font-color);
+      text-transform: capitalize;
+      text-align: left;
+    }
 
     &::after {
       display: block;
@@ -90,9 +97,12 @@
     width: 196px;
     height: 54px;
     padding: 10px 36px;
-    margin-right: 20px;
     background-color: transparent;
     transition: background-color 0.2s linear, box-shadow 0.2s linear;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
 
     &:hover {
       color: $first-font-color;
