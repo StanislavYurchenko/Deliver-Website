@@ -1,0 +1,104 @@
+.about-us {
+  padding-top: 190px;
+  padding-bottom: 180px;
+  background-image: linear-gradient(
+      45deg,
+      rgb(186, 0, 0) 0%,
+      rgba(221, 102, 0, 0.05) 95%,
+      rgba(255, 204, 0, 0.01) 99%,
+      rgb(255, 204, 0) 100%
+    ),
+    url('../../../images/about-us/about-us-background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        45deg,
+        rgb(186, 0, 0) 0%,
+        rgba(221, 102, 0, 0.05) 95%,
+        rgba(255, 204, 0, 0.01) 99%,
+        rgb(255, 204, 0) 100%
+      ),
+      url('../../../images/about-us/about-us-background@2x.jpg');
+  }
+
+  &__title {
+    font-family: $first-font-family;
+    @include font-settings(70px, 80px, 700, $third-font-color);
+    text-transform: capitalize;
+    text-align: left;
+    width: 470px;
+
+    &::after {
+      display: block;
+      content: '';
+      width: 100px;
+      height: 4px;
+      background-color: rgb(255, 204, 0);
+      margin-top: 50px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__description {
+    font-family: $first-font-family;
+    @include font-settings(20px, 30px, 400, $second-font-color);
+    text-align: left;
+    margin-bottom: 38px;
+
+    &-br {
+      display: block;
+      font-family: $first-font-family;
+      @include font-settings(20px, 30px, 400, $second-font-color);
+      text-align: left;
+    }
+  }
+
+  &__feature {
+    margin-bottom: 38px;
+
+    &-item {
+      font-family: $first-font-family;
+      @include font-settings(20px, 30px, 700, $third-font-color);
+      text-transform: uppercase;
+      margin-right: 26px;
+
+      &:not(:last-child):after {
+        display: inline-block;
+        content: '';
+        width: 4px;
+        height: 4px;
+        background-color: $second-main-color;
+        border-radius: 50%;
+        margin-left: 26px;
+      }
+    }
+  }
+
+  &__link {
+    font-family: $first-font-family;
+    @include font-settings(12px, 30px, 700, $third-font-color);
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    border: solid 2px rgb(255, 255, 255);
+    border-radius: 20px;
+    margin: 0 auto;
+    cursor: pointer;
+    width: 196px;
+    height: 54px;
+    padding: 10px 36px;
+    margin-right: 20px;
+    background-color: transparent;
+    transition: background-color 0.2s linear, box-shadow 0.2s linear;
+
+    &:hover {
+      color: $first-font-color;
+      background-color: $second-main-color;
+      border: solid 2px $second-main-color;
+      box-shadow: 0px 10px 18px 0px rgba(255, 204, 0, 0.4);
+    }
+  }
+}
