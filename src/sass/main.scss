@@ -11,8 +11,8 @@
 @import './helpers/placeholder';
 
 @import 'base';
-
-@import './components/header/header';
+@import './components/header/header-base.scss';
+@import './components/header/header.scss';
 
 @import './components/about-us/about-us';
 
