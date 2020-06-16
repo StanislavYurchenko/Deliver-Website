@@ -27,6 +27,7 @@
     .services_item-hover {
       opacity: 1;
       z-index: 1;
+      cursor: pointer;
     }
   }
 
@@ -56,6 +57,7 @@
     font-weight: 900;
     position: relative;
     text-align: left;
+    outline: none;
 
     &::after {
       content: '';
@@ -97,6 +99,7 @@
     font-weight: 900;
     cursor: pointer;
     background-color: transparent;
+    outline: none;
 
     &:hover {
       color: $first-font-color;
@@ -126,12 +129,12 @@
     margin-bottom: 32px;
   }
 }
-
-select {
+.services select {
   width: 210px;
   padding: 20px 22px;
   border: none;
   background-color: #9d0000;
   color: $third-font-color;
   cursor: pointer;
+  outline: none;
 }
